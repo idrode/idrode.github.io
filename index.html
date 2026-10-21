@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>idrode · blockchain y herramientas de terminal</title>
+  <meta name="description" content="Blockchain y herramientas de terminal. Linux y descentralización.">
+  <meta property="og:title" content="idrode · blockchain y herramientas de terminal">
+  <meta property="og:description" content="Blockchain y herramientas de terminal. Linux y descentralización.">
+  <style>
+    /* Para que los iconos se vean en cualquier dispositivo, copia tu fuente Nerd Font
+       (por ejemplo SymbolsNerdFontMono-Regular.woff2) junto a este archivo y descomenta: */
+    /*
+    @font-face {
+      font-family: "Symbols Nerd Font Mono";
+      src: url("SymbolsNerdFontMono-Regular.woff2") format("woff2");
+      font-display: swap;
+    }
+    */
+    :root {
+      --bg: #0d1117;
+      --fg: #c9d1d9;
+      --dim: #7d8590;
+      --accent: #3fb950;
+      --line: #21262d;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--fg); }
+    body {
+      font-family: "Symbols Nerd Font Mono", "JetBrainsMono Nerd Font", "FiraCode Nerd Font",
+                   ui-monospace, "JetBrains Mono", "Fira Code", Menlo, Consolas, monospace;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 48px 16px;
+      line-height: 1.6;
+    }
+    main { width: 100%; max-width: 560px; }
+    .prompt { color: var(--accent); }
+    h1 { font-size: 1.4rem; margin: 0 0 8px; font-weight: 600; }
+    p.bio { margin: 0 0 6px; }
+    p.tags { margin: 0 0 28px; color: var(--dim); font-size: .9rem; }
+    ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    li { border-bottom: 1px solid var(--line); }
+    a.link {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 4px;
+      color: var(--fg);
+      text-decoration: none;
+    }
+    a.link:hover, a.link:focus-visible { background: #161b22; outline: none; }
+    a.link:hover .name, a.link:focus-visible .name { color: var(--accent); }
+    .icon { display: inline-block; width: 1.5em; color: var(--accent); }
+    .handle { color: var(--dim); font-size: .9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .cursor { display: inline-block; width: .6em; background: var(--accent); animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1><span class="prompt">~/</span>idrode<span class="cursor">&nbsp;</span></h1>
+    <p class="bio">Blockchain y herramientas de terminal.</p>
+    <p class="tags">Linux · descentralización · software libre</p>
+
+    <ul>
+      <li>
+        <a class="link" href="https://njump.me/npub12adgyfc46rmdgpv9jhfcja0dw07vpus9dydlkn6k79d0jpjmh22s2z0yyl" rel="me noopener">
+          <span class="name"><span class="icon" aria-hidden="true">&#xf0813;</span>nostr</span>
+          <span class="handle">npub12adgyf…s2z0yyl</span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://stacker.news/roist/posts" rel="me noopener">
+          <span class="name"><span class="icon" aria-hidden="true">&#xf0820;</span>stacker news</span>
+          <span class="handle">@roist</span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://github.com/idrode" rel="me noopener">
+          <span class="name"><span class="icon" aria-hidden="true">&#xf09b;</span>github</span>
+          <span class="handle">@idrode</span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://www.reddit.com/user/roindr/" rel="me noopener">
+          <span class="name"><span class="icon" aria-hidden="true">&#xf1a1;</span>reddit</span>
+          <span class="handle">u/roindr</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
